@@ -1,0 +1,54 @@
+name: Instagram veröffentlichen
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # alle 15 Minuten nach fälligen Einträgen schauen
+  workflow_dispatch:
+    inputs:
+      modus:
+        description: "check = nur Verbindung prüfen, run = fällige Einträge veröffentlichen"
+        type: choice
+        options: [check, run]
+        default: check
+      eintrag:
+        description: "Optional: genau diesen queue-Eintrag sofort veröffentlichen (nur bei run)"
+        type: string
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_USER_ID: "17841477985512833"
+      MEDIA_BASE_URL: "https://rewerichter.github.io/rewe-richter-social"
+      MODUS: ${{ github.event.inputs.modus || 'run' }}
+      EINTRAG: ${{ github.event.inputs.eintrag || '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Veröffentlichen
+        run: python publisher/publish.py "$MODUS" $EINTRAG
+
+      - name: Status speichern
+        if: always() && env.MODUS == 'run'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state
+          if ! git diff --cached --quiet; then
+            git commit -m "Status: Veröffentlichungen aktualisiert"
+            git push
+          fi
