@@ -6,12 +6,12 @@ on:
   workflow_dispatch:
     inputs:
       modus:
-        description: "check = nur Verbindung prüfen, run = fällige Einträge veröffentlichen"
+        description: "check = Verbindung prüfen, run = fällige Einträge veröffentlichen, standort = Standort-ID testen (postet nichts)"
         type: choice
-        options: [check, run]
+        options: [check, run, standort]
         default: check
       eintrag:
-        description: "Optional: genau diesen queue-Eintrag sofort veröffentlichen (nur bei run)"
+        description: "run: queue-Eintrag sofort veröffentlichen / standort: zu testende Seiten-ID"
         type: string
         required: false
 

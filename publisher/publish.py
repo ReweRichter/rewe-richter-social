@@ -145,6 +145,19 @@ def check():
         print(f"Kontingent nicht abrufbar: {e}")
 
 
+def standort_test(location_id):
+    """Legt einen UNVERÖFFENTLICHTEN Bild-Container mit Standort an (verfällt nach 24 h).
+    Es wird niemals media_publish aufgerufen."""
+    bild = f"{MEDIA_BASE}/queue/2026-11-12-1000-post-knorr-fix/bild.jpg"
+    try:
+        cid = call("POST", f"{IG_ID}/media", image_url=bild, location_id=location_id, caption="Standort-Test")["id"]
+        print(f"Standort {location_id}: OK – Instagram akzeptiert die Ortsmarkierung (Test-Container {cid}, nicht veröffentlicht)")
+        return 0
+    except ApiError as e:
+        print(f"Standort {location_id}: abgelehnt – {e}")
+        return 1
+
+
 def run(nur_id=None):
     state = lade_state()
     jetzt = dt.datetime.now(dt.timezone.utc)
@@ -191,6 +204,8 @@ def main():
     if modus == "check":
         check()
         return 0
+    if modus == "standort":
+        return standort_test(sys.argv[2])
     if modus == "run":
         return run(sys.argv[2] if len(sys.argv) > 2 else None)
     sys.exit(f"Unbekannter Modus {modus!r}")
