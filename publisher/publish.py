@@ -191,6 +191,14 @@ def check():
     print(f"Verbindung OK: @{info.get('username')} ({info.get('followers_count')} Follower, "
           f"{info.get('media_count')} Beiträge)")
     try:
+        perms = call("GET", "me/permissions").get("data", [])
+        erteilt = sorted(p["permission"] for p in perms if p.get("status") == "granted")
+        print(f"Berechtigungen des Schlüssels: {', '.join(erteilt)}")
+        print("Löschen am Sonntag: " + ("möglich" if "instagram_manage_contents" in erteilt
+                                         else "NICHT möglich – instagram_manage_contents fehlt"))
+    except ApiError as e:
+        print(f"Berechtigungen nicht abrufbar: {e}")
+    try:
         limit = call("GET", f"{IG_ID}/content_publishing_limit", fields="quota_usage,config")
         print(f"Veröffentlichungs-Kontingent: {json.dumps(limit.get('data'))}")
     except ApiError as e:
