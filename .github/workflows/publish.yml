@@ -30,6 +30,7 @@ jobs:
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
       IG_USER_ID: "17841477985512833"
       MEDIA_BASE_URL: "https://rewerichter.github.io/rewe-richter-social"
+      IG_LOCATION_ID: ${{ vars.IG_LOCATION_ID }}   # Repository-Variable, leer = keine Ortsmarkierung
       MODUS: ${{ github.event.inputs.modus || 'run' }}
       EINTRAG: ${{ github.event.inputs.eintrag || '' }}
     steps:

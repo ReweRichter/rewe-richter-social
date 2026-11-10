@@ -14,7 +14,8 @@ Ein Eintrag ist ein Ordner queue/<id>/ mit item.json und der Mediendatei:
     "zeit": "2026-11-12T07:30:00+01:00",   # frühester Veröffentlichungszeitpunkt
     "datei": "bild.jpg",                    # .jpg für post/story, .mp4 für reel/story
     "caption": "Text mit #Hashtags",        # nicht bei story
-    "cover": "cover.jpg"                    # optional, nur reel
+    "cover": "cover.jpg",                   # optional, nur reel
+    "location_id": "…"                      # optional; sonst IG_LOCATION_ID (nur post/reel)
   }
 
 Instagram holt die Datei selbst über GitHub Pages ab (MEDIA_BASE_URL).
@@ -40,6 +41,8 @@ MAX_VERSUCHE = 3
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
 IG_ID = os.environ.get("IG_USER_ID", "")
 MEDIA_BASE = os.environ.get("MEDIA_BASE_URL", "").rstrip("/")
+# Facebook-Ortsseite des Marktes (Instagram-Standort). Gilt für Posts und Reels, nicht für Storys.
+LOCATION_ID = os.environ.get("IG_LOCATION_ID", "").strip()
 
 
 class ApiError(RuntimeError):
@@ -108,6 +111,9 @@ def veroeffentliche(item_id, item):
             params["cover_url"] = f"{MEDIA_BASE}/queue/{item_id}/{urllib.parse.quote(item['cover'])}"
     else:
         raise ApiError(f"Unbekannter Typ {typ!r}")
+    standort = item.get("location_id") or LOCATION_ID
+    if standort and typ in ("post", "reel"):
+        params["location_id"] = standort
 
     cid = call("POST", f"{IG_ID}/media", **params)["id"]
     warte_auf_container(cid)
