@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       modus:
-        description: "check = Verbindung prüfen, run = fällige Einträge veröffentlichen, standort = Standort-ID testen (postet nichts)"
+        description: "check = Verbindung prüfen, run = fällige Einträge veröffentlichen, standort = Standort-ID testen (postet nichts), aufraeumen = abgelaufene Angebote sofort löschen"
         type: choice
-        options: [check, run, standort]
+        options: [check, run, standort, aufraeumen]
         default: check
       eintrag:
         description: "run: queue-Eintrag sofort veröffentlichen / standort: zu testende Seiten-ID"
@@ -44,7 +44,7 @@ jobs:
         run: python publisher/publish.py "$MODUS" $EINTRAG
 
       - name: Status speichern
-        if: always() && env.MODUS == 'run'
+        if: always() && (env.MODUS == 'run' || env.MODUS == 'aufraeumen')
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

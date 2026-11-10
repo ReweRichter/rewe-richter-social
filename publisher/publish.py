@@ -15,7 +15,8 @@ Ein Eintrag ist ein Ordner queue/<id>/ mit item.json und der Mediendatei:
     "datei": "bild.jpg",                    # .jpg für post/story, .mp4 für reel/story
     "caption": "Text mit #Hashtags",        # nicht bei story
     "cover": "cover.jpg",                   # optional, nur reel
-    "location_id": "…"                      # optional; sonst IG_LOCATION_ID (nur post/reel)
+    "location_id": "…",                     # optional; sonst IG_LOCATION_ID (nur post/reel)
+    "angebot_bis": "2026-11-15"             # nur Angebote: wird Sonntag nach Ablauf gelöscht
   }
 
 Instagram holt die Datei selbst über GitHub Pages ab (MEDIA_BASE_URL).
@@ -30,6 +31,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 API = "https://graph.facebook.com/v25.0"
 ROOT = Path(__file__).resolve().parent.parent
@@ -37,6 +39,8 @@ QUEUE = ROOT / "queue"
 STATE = ROOT / "state" / "published.json"
 MAX_VERSPAETUNG = dt.timedelta(hours=6)   # ältere Einträge werden übersprungen, nicht nachgeholt
 MAX_VERSUCHE = 3
+BERLIN = ZoneInfo("Europe/Berlin")
+AUFRAEUMEN_AB = 20  # Sonntag ab 20 Uhr: abgelaufene Angebots-Beiträge löschen
 
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
 IG_ID = os.environ.get("IG_USER_ID", "")
@@ -125,6 +129,54 @@ def veroeffentliche(item_id, item):
     return media_id, link
 
 
+def loesche(media_id):
+    """Löscht ein Instagram-Medium (Beitrag, Reel oder Story). Braucht instagram_manage_contents."""
+    params = {"access_token": TOKEN}
+    req = urllib.request.Request(f"{API}/{media_id}?{urllib.parse.urlencode(params)}", method="DELETE")
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r).get("success", True)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode(errors="replace")
+        try:
+            err = json.loads(body).get("error", {})
+            msg = f"{err.get('type')} {err.get('code')}/{err.get('error_subcode')}: {err.get('message')}"
+        except ValueError:
+            msg = body[:300]
+        raise ApiError(f"HTTP {e.code} beim Löschen: {msg}") from None
+
+
+def aufraeumen(erzwingen=False):
+    """Regel des Inhabers: Angebots-Beiträge, -Reels und -Storys werden am Sonntag am Ende
+    der Angebotswoche gelöscht, damit Kunden keine abgelaufenen Preise sehen.
+    Gelöscht wird NUR, was dieses System selbst veröffentlicht hat, ein angebot_bis trägt
+    und dessen angebot_bis heute oder früher ist. Alles andere bleibt unangetastet."""
+    jetzt = dt.datetime.now(BERLIN)
+    if not erzwingen and not (jetzt.weekday() == 6 and jetzt.hour >= AUFRAEUMEN_AB):
+        return 0
+    state = lade_state()
+    heute = jetzt.date()
+    fehler = False
+    for item_id, eintrag in sorted(state.items()):
+        if eintrag.get("status") != "veröffentlicht" or not eintrag.get("angebot_bis"):
+            continue
+        if dt.date.fromisoformat(eintrag["angebot_bis"]) > heute:
+            continue
+        if eintrag.get("loeschversuche", 0) >= MAX_VERSUCHE:
+            continue
+        try:
+            loesche(eintrag["media_id"])
+            eintrag.update(status="gelöscht", geloescht_am=jetzt.isoformat(timespec="seconds"))
+            print(f"{item_id}: gelöscht (Angebot bis {eintrag['angebot_bis']})")
+        except ApiError as e:
+            fehler = True
+            eintrag["loeschfehler"] = str(e)
+            eintrag["loeschversuche"] = eintrag.get("loeschversuche", 0) + 1
+            print(f"{item_id}: Löschen FEHLGESCHLAGEN: {e}")
+        speichere_state(state)
+    return 1 if fehler else 0
+
+
 def lade_state():
     return json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {}
 
@@ -185,6 +237,8 @@ def run(nur_id=None):
             media_id, link = veroeffentliche(item_id, item)
             state[item_id] = {"status": "veröffentlicht", "typ": item["typ"], "media_id": media_id,
                               "link": link, "am": jetzt.isoformat(timespec="seconds")}
+            if item.get("angebot_bis"):
+                state[item_id]["angebot_bis"] = item["angebot_bis"]
             print(f"{item_id}: veröffentlicht ({item['typ']}) {link or media_id}")
         except ApiError as e:
             fehler = True
@@ -207,7 +261,10 @@ def main():
     if modus == "standort":
         return standort_test(sys.argv[2])
     if modus == "run":
-        return run(sys.argv[2] if len(sys.argv) > 2 else None)
+        rc = run(sys.argv[2] if len(sys.argv) > 2 else None)
+        return max(rc, aufraeumen())
+    if modus == "aufraeumen":  # manuell, sofort (unabhängig vom Wochentag)
+        return aufraeumen(erzwingen=True)
     sys.exit(f"Unbekannter Modus {modus!r}")
 
 
