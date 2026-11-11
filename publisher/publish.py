@@ -10,9 +10,10 @@ Python-Standardbibliothek.
 Ein Eintrag ist ein Ordner queue/<id>/ mit item.json und der Mediendatei:
 
   {
-    "typ": "post" | "story" | "reel",
+    "typ": "post" | "story" | "reel" | "carousel",
     "zeit": "2026-11-12T07:30:00+01:00",   # frühester Veröffentlichungszeitpunkt
     "datei": "bild.jpg",                    # .jpg für post/story, .mp4 für reel/story
+    "dateien": ["01.jpg", "02.jpg"],        # nur carousel: 2-10 Bilder (statt "datei")
     "caption": "Text mit #Hashtags",        # nicht bei story
     "cover": "cover.jpg",                   # optional, nur reel
     "location_id": "…",                     # optional; sonst IG_LOCATION_ID (nur post/reel)
@@ -97,8 +98,42 @@ def warte_auf_container(cid, max_sek=600):
     raise ApiError("Zeitüberschreitung bei der Verarbeitung durch Instagram")
 
 
+def media_url(item_id, datei):
+    url = f"{MEDIA_BASE}/queue/{item_id}/{urllib.parse.quote(datei)}"
+    if not url_erreichbar(url):
+        raise ApiError(f"Mediendatei noch nicht öffentlich erreichbar: {url}")
+    return url
+
+
+def veroeffentliche_karussell(item_id, item):
+    """Karussell: erst je Bild einen Kind-Container, dann den Karussell-Container veröffentlichen."""
+    dateien = item["dateien"]
+    if not 2 <= len(dateien) <= 10:
+        raise ApiError(f"Karussell braucht 2-10 Bilder, hat {len(dateien)}")
+    urls = [media_url(item_id, d) for d in dateien]  # alle prüfen, bevor etwas angelegt wird
+    kinder = []
+    for url in urls:
+        kid = call("POST", f"{IG_ID}/media", image_url=url, is_carousel_item="true")["id"]
+        warte_auf_container(kid)
+        kinder.append(kid)
+    params = {"media_type": "CAROUSEL", "children": ",".join(kinder), "caption": item.get("caption", "")}
+    standort = item.get("location_id") or LOCATION_ID
+    if standort:
+        params["location_id"] = standort
+    cid = call("POST", f"{IG_ID}/media", **params)["id"]
+    warte_auf_container(cid)
+    return call("POST", f"{IG_ID}/media_publish", creation_id=cid)["id"]
+
+
 def veroeffentliche(item_id, item):
     typ = item["typ"]
+    if typ == "carousel":
+        media_id = veroeffentliche_karussell(item_id, item)
+        try:
+            link = call("GET", media_id, fields="permalink").get("permalink")
+        except ApiError:
+            link = None
+        return media_id, link
     datei_url = f"{MEDIA_BASE}/queue/{item_id}/{urllib.parse.quote(item['datei'])}"
     if not url_erreichbar(datei_url):
         raise ApiError(f"Mediendatei noch nicht öffentlich erreichbar: {datei_url}")
