@@ -16,7 +16,7 @@ Ein Eintrag ist ein Ordner queue/<id>/ mit item.json und der Mediendatei:
     "caption": "Text mit #Hashtags",        # nicht bei story
     "cover": "cover.jpg",                   # optional, nur reel
     "location_id": "…",                     # optional; sonst IG_LOCATION_ID (nur post/reel)
-    "angebot_bis": "2026-11-15"             # nur Angebote: wird Sonntag nach Ablauf gelöscht
+    "angebot_bis": "2026-11-15"             # nur Angebote: Sonntag nach Ablauf auf Instagram und in queue/ gelöscht
   }
 
 Instagram holt die Datei selbst über GitHub Pages ab (MEDIA_BASE_URL).
@@ -25,6 +25,7 @@ Der Status landet in state/published.json und wird vom Workflow committet.
 import datetime as dt
 import json
 import os
+import shutil
 import sys
 import time
 import urllib.error
@@ -174,7 +175,31 @@ def aufraeumen(erzwingen=False):
             eintrag["loeschversuche"] = eintrag.get("loeschversuche", 0) + 1
             print(f"{item_id}: Löschen FEHLGESCHLAGEN: {e}")
         speichere_state(state)
+    dateien_aufraeumen(state, heute)
     return 1 if fehler else 0
+
+
+def dateien_aufraeumen(state, heute):
+    """Entfernt die Dateien abgelaufener Angebote aus queue/ (Bild/Video werden danach nicht mehr
+    gebraucht). Nur Einträge mit angebot_bis <= heute, die auf Instagram gelöscht, übersprungen
+    oder nie veröffentlicht wurden. Veröffentlichte, deren Löschen noch aussteht, bleiben liegen.
+    Der Eintrag in state/published.json bleibt als Protokoll erhalten."""
+    for ordner in sorted(p for p in QUEUE.iterdir() if p.is_dir()) if QUEUE.exists() else []:
+        try:
+            item = json.loads((ordner / "item.json").read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        bis = item.get("angebot_bis")
+        if not bis or dt.date.fromisoformat(bis) > heute:
+            continue
+        status = state.get(ordner.name, {}).get("status")
+        if status == "veröffentlicht":
+            continue
+        shutil.rmtree(ordner)
+        if ordner.name in state:
+            state[ordner.name]["dateien_entfernt"] = heute.isoformat()
+        print(f"{ordner.name}: Dateien aus queue/ entfernt (Angebot bis {bis}, Status {status or 'nie veröffentlicht'})")
+    speichere_state(state)
 
 
 def lade_state():
