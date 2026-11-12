@@ -48,5 +48,77 @@
     "media_id": "18131555269698242",
     "link": "https://www.instagram.com/p/DfnA1OZl8CI/",
     "am": "2026-11-11T17:24:45+00:00"
+  },
+  "2026-11-12-0800-story-ws01-start": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17954429280341078",
+    "link": "https://www.instagram.com/stories/rewerichter/4028626330606010910",
+    "am": "2026-11-12T07:48:22+00:00",
+    "angebot_bis": "2026-11-14"
+  },
+  "2026-11-12-0800-story-ws02-zucchini": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17979220800170629",
+    "link": "https://www.instagram.com/stories/rewerichter/4028626411766651216",
+    "am": "2026-11-12T07:48:22+00:00",
+    "angebot_bis": "2026-11-14"
+  },
+  "2026-11-12-0800-story-ws03-hokkaido": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18113316455181980",
+    "link": "https://www.instagram.com/stories/rewerichter/4028626589772897000",
+    "am": "2026-11-12T07:48:22+00:00",
+    "angebot_bis": "2026-11-14"
+  },
+  "2026-11-12-0800-story-ws04-filet": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18001847280039946",
+    "link": "https://www.instagram.com/stories/rewerichter/4028626760279775827",
+    "am": "2026-11-12T07:48:22+00:00",
+    "angebot_bis": "2026-11-14"
+  },
+  "2026-11-12-0800-story-ws05-putenbrust": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18121994021068708",
+    "link": "https://www.instagram.com/stories/rewerichter/4028626929368950707",
+    "am": "2026-11-12T07:48:22+00:00",
+    "angebot_bis": "2026-11-14"
+  },
+  "2026-11-12-0800-story-ws06-schinken-kassler": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18433752085150066",
+    "link": "https://www.instagram.com/stories/rewerichter/4028627093994477667",
+    "am": "2026-11-12T07:48:22+00:00",
+    "angebot_bis": "2026-11-14"
+  },
+  "2026-11-12-0800-story-ws07-rheinfels": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18123074240052583",
+    "link": "https://www.instagram.com/stories/rewerichter/4028627186530119289",
+    "am": "2026-11-12T07:48:22+00:00",
+    "angebot_bis": "2026-11-14"
+  },
+  "2026-11-12-0800-story-ws08-doppio-passo": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18044685722836478",
+    "link": "https://www.instagram.com/stories/rewerichter/4028627346089821046",
+    "am": "2026-11-12T07:48:22+00:00",
+    "angebot_bis": "2026-11-14"
+  },
+  "2026-11-12-0800-story-ws09-freixenet": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18057438941664273",
+    "link": "https://www.instagram.com/stories/rewerichter/4028627510682682082",
+    "am": "2026-11-12T07:48:22+00:00",
+    "angebot_bis": "2026-11-14"
   }
 }
