@@ -336,5 +336,29 @@
     "link": "https://www.instagram.com/stories/rewerichter/4031081192002275451",
     "am": "2026-11-15T17:05:07+00:00",
     "angebot_bis": "2026-11-21"
+  },
+  "2026-11-16-0700-story-gruenlaender": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18109927094192700",
+    "link": "https://www.instagram.com/stories/rewerichter/4031500602589015869",
+    "am": "2026-11-16T06:59:02+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-16-0701-story-broccoli": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18100714664425005",
+    "link": "https://www.instagram.com/stories/rewerichter/4031500661770624282",
+    "am": "2026-11-16T06:59:02+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-16-0702-story-bio-bananen": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17878407270636227",
+    "link": "https://www.instagram.com/stories/rewerichter/4031500729122785037",
+    "am": "2026-11-16T06:59:02+00:00",
+    "angebot_bis": "2026-11-21"
   }
 }
