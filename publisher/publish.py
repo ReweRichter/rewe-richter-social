@@ -17,7 +17,7 @@ Ein Eintrag ist ein Ordner queue/<id>/ mit item.json und der Mediendatei:
     "caption": "Text mit #Hashtags",        # nicht bei story
     "cover": "cover.jpg",                   # optional, nur reel
     "location_id": "…",                     # optional; sonst IG_LOCATION_ID (nur post/reel)
-    "angebot_bis": "2026-11-15"             # nur Angebote: Sonntag nach Ablauf auf Instagram und in queue/ gelöscht
+    "angebot_bis": "2026-11-15"             # nur Angebote: Samstag 22 Uhr der Angebotswoche auf Instagram und in queue/ gelöscht
   }
 
 Instagram holt die Datei selbst über GitHub Pages ab (MEDIA_BASE_URL).
@@ -41,8 +41,41 @@ QUEUE = ROOT / "queue"
 STATE = ROOT / "state" / "published.json"
 MAX_VERSPAETUNG = dt.timedelta(hours=6)   # ältere Einträge werden übersprungen, nicht nachgeholt
 MAX_VERSUCHE = 3
-BERLIN = ZoneInfo("Europe/Berlin")
-AUFRAEUMEN_AB = 20  # Sonntag ab 20 Uhr: abgelaufene Angebots-Beiträge löschen
+class _MitteleuropaeischeZeit(dt.tzinfo):
+    """Ersatz, wenn die Zeitzonen-Datenbank fehlt (Windows ohne tzdata): MEZ/MESZ nach EU-Regel,
+    Sommerzeit vom letzten Sonntag im März bis zum letzten Sonntag im Oktober (je 1 Uhr UTC)."""
+
+    @staticmethod
+    def _letzter_sonntag(jahr, monat):
+        d = dt.date(jahr, monat, 31)
+        return d - dt.timedelta(days=(d.weekday() + 1) % 7)
+
+    def _sommer(self, utc):
+        beginn = dt.datetime.combine(self._letzter_sonntag(utc.year, 3), dt.time(1))
+        ende = dt.datetime.combine(self._letzter_sonntag(utc.year, 10), dt.time(1))
+        return beginn <= utc < ende
+
+    def utcoffset(self, d):
+        return dt.timedelta(hours=2 if self._sommer(d.replace(tzinfo=None) - dt.timedelta(hours=1)) else 1)
+
+    def dst(self, d):
+        return self.utcoffset(d) - dt.timedelta(hours=1)
+
+    def fromutc(self, d):
+        utc = d.replace(tzinfo=None)
+        return (utc + dt.timedelta(hours=2 if self._sommer(utc) else 1)).replace(tzinfo=self)
+
+    def tzname(self, d):
+        return "MESZ" if self.dst(d) else "MEZ"
+
+
+try:
+    BERLIN = ZoneInfo("Europe/Berlin")
+except Exception:  # ZoneInfoNotFoundError
+    BERLIN = _MitteleuropaeischeZeit()
+AUFRAEUMEN_UHR = 22    # Samstag ab 22 Uhr: Angebote der Woche löschen, der Sonntag bleibt frei von alter Werbung
+STORY_SCHLUSS_UHR = 20  # letzte Angebots-Story spätestens Freitag 20 Uhr (nach 24 h vor dem Aufräumen weg)
+STORY_LEBENSDAUER = dt.timedelta(hours=24)
 
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
 IG_ID = os.environ.get("IG_USER_ID", "")
@@ -52,7 +85,39 @@ LOCATION_ID = os.environ.get("IG_LOCATION_ID", "").strip()
 
 
 class ApiError(RuntimeError):
-    pass
+    def __init__(self, msg, code=None):
+        super().__init__(msg)
+        self.code = code
+
+
+def samstag_der_woche(angebot_bis):
+    """Samstag der Angebotswoche: das Ende selbst, bei Sonntag der Vortag, sonst der folgende Samstag."""
+    d = dt.date.fromisoformat(angebot_bis)
+    return d - dt.timedelta(days=1) if d.weekday() == 6 else d + dt.timedelta(days=5 - d.weekday())
+
+
+def aufraeum_zeit(angebot_bis):
+    """Samstag 22 Uhr der Angebotswoche (Berliner Zeit): ab dann wird das Angebot gelöscht."""
+    return dt.datetime.combine(samstag_der_woche(angebot_bis), dt.time(AUFRAEUMEN_UHR), BERLIN)
+
+
+def story_schluss(angebot_bis):
+    """Freitag 20 Uhr der Angebotswoche: spätester Zeitpunkt für eine Angebots-Story."""
+    sa = samstag_der_woche(angebot_bis)
+    return dt.datetime.combine(sa - dt.timedelta(days=1), dt.time(STORY_SCHLUSS_UHR), BERLIN)
+
+
+def zu_spaet_fuer_angebot(item):
+    """Grund, warum ein Angebots-Eintrag nicht mehr veröffentlicht werden darf, sonst None."""
+    bis = item.get("angebot_bis")
+    if not bis:
+        return None
+    zeit = dt.datetime.fromisoformat(item["zeit"])
+    if item["typ"] == "story" and zeit > story_schluss(bis):
+        return "Angebots-Story nach Freitag 20 Uhr (wäre am Samstagabend noch sichtbar)"
+    if zeit >= aufraeum_zeit(bis):
+        return "Angebot nach dem Aufräumen am Samstag 22 Uhr"
+    return None
 
 
 def call(method, path, **params):
@@ -67,12 +132,13 @@ def call(method, path, **params):
             return json.load(r)
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace")
+        err = {}
         try:
             err = json.loads(body).get("error", {})
             msg = f"{err.get('type')} {err.get('code')}/{err.get('error_subcode')}: {err.get('message')}"
         except ValueError:
             msg = body[:300]
-        raise ApiError(f"HTTP {e.code} bei {path}: {msg}") from None
+        raise ApiError(f"HTTP {e.code} bei {path}: {msg}", code=err.get("code")) from None
 
 
 def url_erreichbar(url):
@@ -174,58 +240,89 @@ def loesche(media_id):
             return json.load(r).get("success", True)
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace")
+        err = {}
         try:
             err = json.loads(body).get("error", {})
             msg = f"{err.get('type')} {err.get('code')}/{err.get('error_subcode')}: {err.get('message')}"
         except ValueError:
             msg = body[:300]
-        raise ApiError(f"HTTP {e.code} beim Löschen: {msg}") from None
+        raise ApiError(f"HTTP {e.code} beim Löschen: {msg}", code=err.get("code")) from None
+
+
+def noch_vorhanden(media_id):
+    """False, wenn Instagram das Medium nicht mehr kennt (z. B. von Hand gelöscht)."""
+    try:
+        call("GET", media_id, fields="id")
+        return True
+    except ApiError as e:
+        if e.code == 100:
+            return False
+        raise
 
 
 def aufraeumen(erzwingen=False):
-    """Regel des Inhabers: Angebots-Beiträge, -Reels und -Storys werden am Sonntag am Ende
-    der Angebotswoche gelöscht, damit Kunden keine abgelaufenen Preise sehen.
-    Gelöscht wird NUR, was dieses System selbst veröffentlicht hat, ein angebot_bis trägt
-    und dessen angebot_bis heute oder früher ist. Alles andere bleibt unangetastet."""
+    """Regel des Inhabers: Angebots-Beiträge, -Reels und -Storys werden am Samstag ab 22 Uhr
+    am Ende der Angebotswoche gelöscht, damit am Sonntag keine abgelaufenen Preise zu sehen sind.
+    Gelöscht wird NUR, was dieses System selbst veröffentlicht hat und ein angebot_bis trägt,
+    sobald der Samstag 22 Uhr dieser Angebotswoche erreicht ist (holt verpasste Läufe nach).
+    erzwingen (Modus aufraeumen): zusätzlich alles mit angebot_bis heute oder früher, sofort.
+    Storys verschwinden nach 24 h von selbst; sie werden nur noch als abgelaufen vermerkt.
+    Alles andere bleibt unangetastet."""
     jetzt = dt.datetime.now(BERLIN)
-    if not erzwingen and not (jetzt.weekday() == 6 and jetzt.hour >= AUFRAEUMEN_AB):
-        return 0
     state = lade_state()
     heute = jetzt.date()
     fehler = False
     for item_id, eintrag in sorted(state.items()):
         if eintrag.get("status") != "veröffentlicht" or not eintrag.get("angebot_bis"):
             continue
-        if dt.date.fromisoformat(eintrag["angebot_bis"]) > heute:
+        faellig = jetzt >= aufraeum_zeit(eintrag["angebot_bis"])
+        if erzwingen:
+            faellig = faellig or dt.date.fromisoformat(eintrag["angebot_bis"]) <= heute
+        if not faellig or eintrag.get("loeschversuche", 0) >= MAX_VERSUCHE:
             continue
-        if eintrag.get("loeschversuche", 0) >= MAX_VERSUCHE:
+        veroeffentlicht = dt.datetime.fromisoformat(eintrag["am"])
+        if eintrag.get("typ") == "story" and jetzt - veroeffentlicht >= STORY_LEBENSDAUER:
+            eintrag.update(status="abgelaufen", abgelaufen_am=(veroeffentlicht + STORY_LEBENSDAUER).isoformat(timespec="seconds"))
+            print(f"{item_id}: Story nach 24 h von selbst verschwunden, nichts zu löschen")
+            speichere_state(state)
             continue
         try:
             loesche(eintrag["media_id"])
             eintrag.update(status="gelöscht", geloescht_am=jetzt.isoformat(timespec="seconds"))
             print(f"{item_id}: gelöscht (Angebot bis {eintrag['angebot_bis']})")
         except ApiError as e:
-            fehler = True
-            eintrag["loeschfehler"] = str(e)
-            eintrag["loeschversuche"] = eintrag.get("loeschversuche", 0) + 1
-            print(f"{item_id}: Löschen FEHLGESCHLAGEN: {e}")
+            try:
+                weg = not noch_vorhanden(eintrag["media_id"])
+            except ApiError:
+                weg = False
+            if weg:
+                eintrag.update(status="nicht mehr vorhanden", geprueft_am=jetzt.isoformat(timespec="seconds"))
+                print(f"{item_id}: war auf Instagram schon gelöscht (z. B. von Hand)")
+            else:
+                fehler = True
+                eintrag["loeschfehler"] = str(e)
+                eintrag["loeschversuche"] = eintrag.get("loeschversuche", 0) + 1
+                print(f"{item_id}: Löschen FEHLGESCHLAGEN: {e}")
         speichere_state(state)
-    dateien_aufraeumen(state, heute)
+    dateien_aufraeumen(state, jetzt, erzwingen)
     return 1 if fehler else 0
 
 
-def dateien_aufraeumen(state, heute):
+def dateien_aufraeumen(state, jetzt, erzwingen=False):
     """Entfernt die Dateien abgelaufener Angebote aus queue/ (Bild/Video werden danach nicht mehr
-    gebraucht). Nur Einträge mit angebot_bis <= heute, die auf Instagram gelöscht, übersprungen
-    oder nie veröffentlicht wurden. Veröffentlichte, deren Löschen noch aussteht, bleiben liegen.
-    Der Eintrag in state/published.json bleibt als Protokoll erhalten."""
+    gebraucht). Nur Einträge, deren Aufräumzeit (Samstag 22 Uhr) erreicht ist und die auf Instagram
+    gelöscht, abgelaufen, übersprungen oder nie veröffentlicht wurden. Veröffentlichte, deren Löschen
+    noch aussteht, bleiben liegen. Der Eintrag in state/published.json bleibt als Protokoll erhalten."""
+    heute = jetzt.date()
     for ordner in sorted(p for p in QUEUE.iterdir() if p.is_dir()) if QUEUE.exists() else []:
         try:
             item = json.loads((ordner / "item.json").read_text(encoding="utf-8"))
         except (OSError, ValueError):
             continue
         bis = item.get("angebot_bis")
-        if not bis or dt.date.fromisoformat(bis) > heute:
+        if not bis:
+            continue
+        if jetzt < aufraeum_zeit(bis) and not (erzwingen and dt.date.fromisoformat(bis) <= heute):
             continue
         status = state.get(ordner.name, {}).get("status")
         if status == "veröffentlicht":
@@ -254,7 +351,7 @@ def check():
         perms = call("GET", "me/permissions").get("data", [])
         erteilt = sorted(p["permission"] for p in perms if p.get("status") == "granted")
         print(f"Berechtigungen des Schlüssels: {', '.join(erteilt)}")
-        print("Löschen am Sonntag: " + ("möglich" if "instagram_manage_contents" in erteilt
+        print("Löschen am Samstagabend: " + ("möglich" if "instagram_manage_contents" in erteilt
                                          else "NICHT möglich – instagram_manage_contents fehlt"))
     except ApiError as e:
         print(f"Berechtigungen nicht abrufbar: {e}")
@@ -299,6 +396,18 @@ def run(nur_id=None):
                                   "am": jetzt.isoformat(timespec="seconds")}
                 print(f"{item_id}: übersprungen, Zeitpunkt lag mehr als 6 h zurück")
                 continue
+        # Regel des Inhabers (auch beim manuellen Veröffentlichen): keine Angebots-Story nach
+        # Freitag 20 Uhr (geplante Zeit), kein Angebot mehr, sobald das Aufräumen am Samstag
+        # 22 Uhr erreicht ist (tatsächliche Zeit, auch bei verspäteten Läufen).
+        sperre = zu_spaet_fuer_angebot(item)
+        if not sperre and item.get("angebot_bis") and jetzt >= aufraeum_zeit(item["angebot_bis"]):
+            sperre = "Angebot nach dem Aufräumen am Samstag 22 Uhr"
+        if sperre:
+            state[item_id] = {"status": "übersprungen", "grund": sperre,
+                              "am": jetzt.isoformat(timespec="seconds")}
+            print(f"{item_id}: übersprungen, {sperre}")
+            speichere_state(state)
+            continue
         if eintrag.get("versuche", 0) >= MAX_VERSUCHE:
             continue
         try:
