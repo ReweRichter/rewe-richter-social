@@ -35,13 +35,10 @@
     "am": "2026-11-11T12:37:06+00:00"
   },
   "2026-11-11-1700-story-cocacola": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18146311825713835",
-    "link": "https://www.instagram.com/stories/rewerichter/4028160188711766707",
-    "am": "2026-11-11T16:22:13+00:00",
-    "angebot_bis": "2026-11-15",
-    "abgelaufen_am": "2026-11-12T16:22:13+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-11-1800-carousel-rezept-champignon-rahm-haehnchen": {
     "status": "veröffentlicht",
@@ -51,193 +48,130 @@
     "am": "2026-11-11T17:24:45+00:00"
   },
   "2026-11-12-0800-story-ws01-start": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "17954429280341078",
-    "link": "https://www.instagram.com/stories/rewerichter/4028626330606010910",
-    "am": "2026-11-12T07:48:22+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-13T07:48:22+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-12-0800-story-ws02-zucchini": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "17979220800170629",
-    "link": "https://www.instagram.com/stories/rewerichter/4028626411766651216",
-    "am": "2026-11-12T07:48:22+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-13T07:48:22+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-12-0800-story-ws03-hokkaido": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18113316455181980",
-    "link": "https://www.instagram.com/stories/rewerichter/4028626589772897000",
-    "am": "2026-11-12T07:48:22+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-13T07:48:22+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-12-0800-story-ws04-filet": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18001847280039946",
-    "link": "https://www.instagram.com/stories/rewerichter/4028626760279775827",
-    "am": "2026-11-12T07:48:22+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-13T07:48:22+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-12-0800-story-ws05-putenbrust": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18121994021068708",
-    "link": "https://www.instagram.com/stories/rewerichter/4028626929368950707",
-    "am": "2026-11-12T07:48:22+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-13T07:48:22+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-12-0800-story-ws06-schinken-kassler": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18433752085150066",
-    "link": "https://www.instagram.com/stories/rewerichter/4028627093994477667",
-    "am": "2026-11-12T07:48:22+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-13T07:48:22+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-12-0800-story-ws07-rheinfels": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18123074240052583",
-    "link": "https://www.instagram.com/stories/rewerichter/4028627186530119289",
-    "am": "2026-11-12T07:48:22+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-13T07:48:22+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-12-0800-story-ws08-doppio-passo": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18044685722836478",
-    "link": "https://www.instagram.com/stories/rewerichter/4028627346089821046",
-    "am": "2026-11-12T07:48:22+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-13T07:48:22+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-12-0800-story-ws09-freixenet": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18057438941664273",
-    "link": "https://www.instagram.com/stories/rewerichter/4028627510682682082",
-    "am": "2026-11-12T07:48:22+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-13T07:48:22+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-12-1000-post-knorr-fix": {
-    "status": "nicht mehr vorhanden",
-    "typ": "post",
-    "media_id": "18109028080980959",
-    "link": "https://www.instagram.com/p/Dfow_fdDbz-/",
-    "am": "2026-11-12T09:45:36+00:00",
-    "angebot_bis": "2026-11-15",
-    "grund": "vom Inhaber von Hand gelöscht"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-12-1700-story-milka": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18118798915821807",
-    "link": "https://www.instagram.com/stories/rewerichter/4028897790021584518",
-    "am": "2026-11-12T16:47:43+00:00",
-    "angebot_bis": "2026-11-15",
-    "abgelaufen_am": "2026-11-13T16:47:43+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-13-0800-story-ws01-endspurt": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18063763442797800",
-    "link": "https://www.instagram.com/stories/rewerichter/4029354864677430029",
-    "am": "2026-11-13T07:55:50+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-14T07:55:50+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-13-0800-story-ws02-zucchini": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18121815329278707",
-    "link": "https://www.instagram.com/stories/rewerichter/4029355030218274154",
-    "am": "2026-11-13T07:55:50+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-14T07:55:50+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-13-0800-story-ws03-hokkaido": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "17915593326476326",
-    "link": "https://www.instagram.com/stories/rewerichter/4029355171230748424",
-    "am": "2026-11-13T07:55:50+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-14T07:55:50+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-13-0800-story-ws04-filet": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "17999557728028716",
-    "link": "https://www.instagram.com/stories/rewerichter/4029355321487469044",
-    "am": "2026-11-13T07:55:50+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-14T07:55:50+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-13-0800-story-ws05-putenbrust": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18133172608867220",
-    "link": "https://www.instagram.com/stories/rewerichter/4029355467575102606",
-    "am": "2026-11-13T07:55:50+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-14T07:55:50+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-13-0800-story-ws06-schinken-kassler": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "17956609920281017",
-    "link": "https://www.instagram.com/stories/rewerichter/4029355614006658535",
-    "am": "2026-11-13T07:55:50+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-14T07:55:50+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-13-0800-story-ws07-rheinfels": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18121930706070177",
-    "link": "https://www.instagram.com/stories/rewerichter/4029355770202547093",
-    "am": "2026-11-13T07:55:50+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-14T07:55:50+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-13-0800-story-ws08-doppio-passo": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "17920529373459526",
-    "link": "https://www.instagram.com/stories/rewerichter/4029355919243150221",
-    "am": "2026-11-13T07:55:50+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-14T07:55:50+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-13-0800-story-ws09-freixenet": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18135064318865109",
-    "link": "https://www.instagram.com/stories/rewerichter/4029355988306358746",
-    "am": "2026-11-13T07:55:50+00:00",
-    "angebot_bis": "2026-11-14",
-    "abgelaufen_am": "2026-11-14T07:55:50+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-13-1000-post-cocacola": {
-    "status": "nicht mehr vorhanden",
-    "typ": "post",
-    "media_id": "18473517205137591",
-    "link": "https://www.instagram.com/p/DfrVxXqIEY9/",
-    "am": "2026-11-13T09:45:28+00:00",
-    "angebot_bis": "2026-11-15",
-    "grund": "vom Inhaber von Hand gelöscht"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-13-1600-carousel-rezept-gruenkohl-norddeutsche-art": {
     "status": "veröffentlicht",
@@ -247,31 +181,22 @@
     "am": "2026-11-13T15:26:46+00:00"
   },
   "2026-11-13-1700-story-langnese-cremissimo": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18456533491125813",
-    "link": "https://www.instagram.com/stories/rewerichter/4029608064156406382",
-    "am": "2026-11-13T16:18:54+00:00",
-    "angebot_bis": "2026-11-15",
-    "abgelaufen_am": "2026-11-14T16:18:54+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-14-1000-post-mueller-joghurt": {
-    "status": "nicht mehr vorhanden",
-    "typ": "post",
-    "media_id": "18131254156848632",
-    "link": "https://www.instagram.com/p/Dft3FyMGkem/",
-    "am": "2026-11-14T09:15:06+00:00",
-    "angebot_bis": "2026-11-15",
-    "grund": "vom Inhaber von Hand gelöscht"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-14-1700-story-leerdammer": {
-    "status": "abgelaufen",
-    "typ": "story",
-    "media_id": "18425331778159471",
-    "link": "https://www.instagram.com/stories/rewerichter/4030333466457918408",
-    "am": "2026-11-14T16:20:08+00:00",
-    "angebot_bis": "2026-11-15",
-    "abgelaufen_am": "2026-11-15T16:20:08+00:00"
+    "status": "übersprungen",
+    "grund": "zu spät (Ausfall?)",
+    "am": "2026-11-16T09:33:38+00:00",
+    "dateien_entfernt": "2026-11-16"
   },
   "2026-11-15-1100-story-sonntag": {
     "status": "veröffentlicht",
@@ -334,6 +259,14 @@
     "media_id": "17878407270636227",
     "link": "https://www.instagram.com/stories/rewerichter/4031500729122785037",
     "am": "2026-11-16T06:59:02+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-16-1000-carousel-frische": {
+    "status": "veröffentlicht",
+    "typ": "carousel",
+    "media_id": "18166373752495032",
+    "link": "https://www.instagram.com/p/DfzDAVRl-0r/",
+    "am": "2026-11-16T09:33:38+00:00",
     "angebot_bis": "2026-11-21"
   }
 }
