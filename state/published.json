@@ -315,5 +315,29 @@
     "link": "https://www.instagram.com/p/Df1pvlKIJLN/",
     "am": "2026-11-17T09:49:55+00:00",
     "angebot_bis": "2026-11-21"
+  },
+  "2026-11-17-1200-story-rinderbraten": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18361215685220743",
+    "link": "https://www.instagram.com/stories/rewerichter/4032365913332101584",
+    "am": "2026-11-17T11:38:16+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-17-1201-story-beinscheibe": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17968351047197613",
+    "link": "https://www.instagram.com/stories/rewerichter/4032366087873879857",
+    "am": "2026-11-17T11:38:16+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-17-1202-story-heimatschwein": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18027374126869770",
+    "link": "https://www.instagram.com/stories/rewerichter/4032366235479775434",
+    "am": "2026-11-17T11:38:16+00:00",
+    "angebot_bis": "2026-11-21"
   }
 }
