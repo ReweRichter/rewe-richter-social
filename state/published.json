@@ -370,5 +370,19 @@
     "link": "https://www.instagram.com/stories/rewerichter/4032519399298449919",
     "am": "2026-11-17T16:42:32+00:00",
     "angebot_bis": "2026-11-21"
+  },
+  "2026-11-17-1900-reel-sb-kasse": {
+    "status": "veröffentlicht",
+    "typ": "reel",
+    "media_id": "18120597781791157",
+    "link": "https://www.instagram.com/reel/Df2lRx8hB7V/",
+    "am": "2026-11-17T18:32:32+00:00"
+  },
+  "2026-11-17-1900-story-sb-kasse": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17957339451082667",
+    "link": "https://www.instagram.com/stories/rewerichter/4032574889147428204",
+    "am": "2026-11-17T18:32:32+00:00"
   }
 }
