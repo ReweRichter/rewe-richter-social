@@ -346,5 +346,29 @@
     "media_id": "17964062841255003",
     "link": "https://www.instagram.com/p/Df2R6zWDSsQ/",
     "am": "2026-11-17T15:42:45+00:00"
+  },
+  "2026-11-17-1700-story-theke-wurst": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17866547487692457",
+    "link": "https://www.instagram.com/stories/rewerichter/4032519065087961278",
+    "am": "2026-11-17T16:42:32+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-17-1701-story-theke-schinken": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18132361276873501",
+    "link": "https://www.instagram.com/stories/rewerichter/4032519234269374039",
+    "am": "2026-11-17T16:42:32+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-17-1702-story-theke-kaese": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18100202282659536",
+    "link": "https://www.instagram.com/stories/rewerichter/4032519399298449919",
+    "am": "2026-11-17T16:42:32+00:00",
+    "angebot_bis": "2026-11-21"
   }
 }
