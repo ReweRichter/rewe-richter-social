@@ -392,5 +392,29 @@
     "link": "https://www.instagram.com/p/Df4VRLmFP9p/",
     "am": "2026-11-18T10:50:06+00:00",
     "angebot_bis": "2026-11-21"
+  },
+  "2026-11-18-1200-story-b-noa": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18127363501906633",
+    "link": "https://www.instagram.com/stories/rewerichter/4033096075187841754",
+    "am": "2026-11-18T11:48:57+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-18-1201-story-b-oatly": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17913183186580786",
+    "link": "https://www.instagram.com/stories/rewerichter/4033096234638504094",
+    "am": "2026-11-18T11:48:57+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-18-1202-story-b-innocent": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18067728824630047",
+    "link": "https://www.instagram.com/stories/rewerichter/4033096391849409133",
+    "am": "2026-11-18T11:48:57+00:00",
+    "angebot_bis": "2026-11-21"
   }
 }
