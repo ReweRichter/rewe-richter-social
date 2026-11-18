@@ -384,5 +384,11 @@
     "media_id": "17957339451082667",
     "link": "https://www.instagram.com/stories/rewerichter/4032574889147428204",
     "am": "2026-11-17T18:32:32+00:00"
+  },
+  "2026-11-18-1000-carousel-adventsbrunch": {
+    "status": "fehler",
+    "versuche": 1,
+    "fehler": "Mediendatei noch nicht öffentlich erreichbar: https://rewerichter.github.io/rewe-richter-social/queue/2026-11-18-1000-carousel-adventsbrunch/02-img-brunch-board.jpg",
+    "am": "2026-11-18T09:48:36+00:00"
   }
 }
