@@ -430,5 +430,45 @@
     "media_id": "18091544072271069",
     "link": "https://www.instagram.com/stories/rewerichter/4033127850973777519",
     "am": "2026-11-18T12:50:56+00:00"
+  },
+  "2026-11-18-1700-story-knorr-spaghetteria": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18659286418063956",
+    "link": "https://www.instagram.com/stories/rewerichter/4033224921940873452",
+    "am": "2026-11-18T16:04:57+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-18-1701-story-just-spices": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18455201278133755",
+    "link": "https://www.instagram.com/stories/rewerichter/4033224990392826681",
+    "am": "2026-11-18T16:04:57+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-18-1702-story-iglo": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18118519088606359",
+    "link": "https://www.instagram.com/stories/rewerichter/4033225065211747704",
+    "am": "2026-11-18T16:04:57+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-18-1703-story-wagner": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18020737577959373",
+    "link": "https://www.instagram.com/stories/rewerichter/4033225144089144214",
+    "am": "2026-11-18T16:04:57+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-18-1704-story-rama": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17887935858626223",
+    "link": "https://www.instagram.com/stories/rewerichter/4033225216231178629",
+    "am": "2026-11-18T16:04:57+00:00",
+    "angebot_bis": "2026-11-21"
   }
 }
