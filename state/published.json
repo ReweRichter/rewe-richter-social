@@ -613,5 +613,45 @@
     "media_id": "18132798397884581",
     "link": "https://www.instagram.com/p/Df-BeCdl372/",
     "am": "2026-11-20T15:53:03+00:00"
+  },
+  "2026-11-20-1700-story-we-filet": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18115224911578927",
+    "link": "https://www.instagram.com/stories/rewerichter/4034695847668727562",
+    "am": "2026-11-20T16:47:25+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-20-1701-story-we-gouda": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18119393411009704",
+    "link": "https://www.instagram.com/stories/rewerichter/4034696027587543649",
+    "am": "2026-11-20T16:47:25+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-20-1702-story-we-lamberti": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18181754503431423",
+    "link": "https://www.instagram.com/stories/rewerichter/4034696179137078668",
+    "am": "2026-11-20T16:47:25+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-20-1703-story-we-paderborner": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18103854248527636",
+    "link": "https://www.instagram.com/stories/rewerichter/4034696318866109522",
+    "am": "2026-11-20T16:47:25+00:00",
+    "angebot_bis": "2026-11-21"
+  },
+  "2026-11-20-1704-story-b-jackdaniels": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17880303711573002",
+    "link": "https://www.instagram.com/stories/rewerichter/4034696389740580716",
+    "am": "2026-11-20T16:47:25+00:00",
+    "angebot_bis": "2026-11-21"
   }
 }
