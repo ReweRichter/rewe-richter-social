@@ -206,100 +206,124 @@
     "am": "2026-11-15T10:33:33+00:00"
   },
   "2026-11-15-1700-carousel-vorschau-knaller": {
-    "status": "veröffentlicht",
+    "status": "gelöscht",
     "typ": "carousel",
     "media_id": "18010249215005757",
     "link": "https://www.instagram.com/p/DfxNBexjzLj/",
     "am": "2026-11-15T16:21:44+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "geloescht_am": "2026-11-21T22:06:44+01:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-15-1800-story-jacobs-kroenung": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18142496290714640",
     "link": "https://www.instagram.com/stories/rewerichter/4031080879761475865",
     "am": "2026-11-15T17:05:07+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-16T17:05:07+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-15-1801-story-heimatschwein": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18111726481917452",
     "link": "https://www.instagram.com/stories/rewerichter/4031081042206858115",
     "am": "2026-11-15T17:05:07+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-16T17:05:07+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-15-1802-story-milka": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18077541860586460",
     "link": "https://www.instagram.com/stories/rewerichter/4031081192002275451",
     "am": "2026-11-15T17:05:07+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-16T17:05:07+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-16-0700-story-gruenlaender": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18109927094192700",
     "link": "https://www.instagram.com/stories/rewerichter/4031500602589015869",
     "am": "2026-11-16T06:59:02+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-17T06:59:02+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-16-0701-story-broccoli": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18100714664425005",
     "link": "https://www.instagram.com/stories/rewerichter/4031500661770624282",
     "am": "2026-11-16T06:59:02+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-17T06:59:02+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-16-0702-story-bio-bananen": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17878407270636227",
     "link": "https://www.instagram.com/stories/rewerichter/4031500729122785037",
     "am": "2026-11-16T06:59:02+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-17T06:59:02+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-16-1000-carousel-frische": {
-    "status": "veröffentlicht",
+    "status": "gelöscht",
     "typ": "carousel",
     "media_id": "18166373752495032",
     "link": "https://www.instagram.com/p/DfzDAVRl-0r/",
     "am": "2026-11-16T09:33:38+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "geloescht_am": "2026-11-21T22:06:44+01:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-16-1700-story-bonus-intro": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18133377157699521",
     "link": "https://www.instagram.com/stories/rewerichter/4031801028479237274",
     "am": "2026-11-16T16:55:55+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-17T16:55:55+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-16-1701-story-b-cocacola": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18098726153160350",
     "link": "https://www.instagram.com/stories/rewerichter/4031801236642568902",
     "am": "2026-11-16T16:55:55+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-17T16:55:55+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-16-1702-story-b-philadelphia": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18414320770094091",
     "link": "https://www.instagram.com/stories/rewerichter/4031801428951410163",
     "am": "2026-11-16T16:55:55+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-17T16:55:55+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-16-1703-story-b-duplo": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18103892480390659",
     "link": "https://www.instagram.com/stories/rewerichter/4031801528205390410",
     "am": "2026-11-16T16:55:55+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-17T16:55:55+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-16-1900-reel-teddy-spiel": {
     "status": "veröffentlicht",
@@ -309,36 +333,44 @@
     "am": "2026-11-16T18:41:38+00:00"
   },
   "2026-11-17-1000-carousel-bonus": {
-    "status": "veröffentlicht",
+    "status": "gelöscht",
     "typ": "carousel",
     "media_id": "18119598131008267",
     "link": "https://www.instagram.com/p/Df1pvlKIJLN/",
     "am": "2026-11-17T09:49:55+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "geloescht_am": "2026-11-21T22:06:44+01:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-17-1200-story-rinderbraten": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18361215685220743",
     "link": "https://www.instagram.com/stories/rewerichter/4032365913332101584",
     "am": "2026-11-17T11:38:16+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-18T11:38:16+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-17-1201-story-beinscheibe": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17968351047197613",
     "link": "https://www.instagram.com/stories/rewerichter/4032366087873879857",
     "am": "2026-11-17T11:38:16+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-18T11:38:16+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-17-1202-story-heimatschwein": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18027374126869770",
     "link": "https://www.instagram.com/stories/rewerichter/4032366235479775434",
     "am": "2026-11-17T11:38:16+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-18T11:38:16+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-17-1600-carousel-rezept-kuerbis-curry-cremesuppe": {
     "status": "veröffentlicht",
@@ -348,28 +380,34 @@
     "am": "2026-11-17T15:42:45+00:00"
   },
   "2026-11-17-1700-story-theke-wurst": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17866547487692457",
     "link": "https://www.instagram.com/stories/rewerichter/4032519065087961278",
     "am": "2026-11-17T16:42:32+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-18T16:42:32+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-17-1701-story-theke-schinken": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18132361276873501",
     "link": "https://www.instagram.com/stories/rewerichter/4032519234269374039",
     "am": "2026-11-17T16:42:32+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-18T16:42:32+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-17-1702-story-theke-kaese": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18100202282659536",
     "link": "https://www.instagram.com/stories/rewerichter/4032519399298449919",
     "am": "2026-11-17T16:42:32+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-18T16:42:32+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-17-1900-reel-sb-kasse": {
     "status": "veröffentlicht",
@@ -386,36 +424,44 @@
     "am": "2026-11-17T18:32:32+00:00"
   },
   "2026-11-18-1000-carousel-adventsbrunch": {
-    "status": "veröffentlicht",
+    "status": "gelöscht",
     "typ": "carousel",
     "media_id": "18379873501245631",
     "link": "https://www.instagram.com/p/Df4VRLmFP9p/",
     "am": "2026-11-18T10:50:06+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "geloescht_am": "2026-11-21T22:06:44+01:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-18-1200-story-b-noa": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18127363501906633",
     "link": "https://www.instagram.com/stories/rewerichter/4033096075187841754",
     "am": "2026-11-18T11:48:57+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-19T11:48:57+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-18-1201-story-b-oatly": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17913183186580786",
     "link": "https://www.instagram.com/stories/rewerichter/4033096234638504094",
     "am": "2026-11-18T11:48:57+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-19T11:48:57+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-18-1202-story-b-innocent": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18067728824630047",
     "link": "https://www.instagram.com/stories/rewerichter/4033096391849409133",
     "am": "2026-11-18T11:48:57+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-19T11:48:57+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-18-1300-reel-zocker-proviant": {
     "status": "veröffentlicht",
@@ -432,180 +478,224 @@
     "am": "2026-11-18T12:50:56+00:00"
   },
   "2026-11-18-1700-story-knorr-spaghetteria": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18659286418063956",
     "link": "https://www.instagram.com/stories/rewerichter/4033224921940873452",
     "am": "2026-11-18T16:04:57+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-19T16:04:57+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-18-1701-story-just-spices": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18455201278133755",
     "link": "https://www.instagram.com/stories/rewerichter/4033224990392826681",
     "am": "2026-11-18T16:04:57+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-19T16:04:57+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-18-1702-story-iglo": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18118519088606359",
     "link": "https://www.instagram.com/stories/rewerichter/4033225065211747704",
     "am": "2026-11-18T16:04:57+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-19T16:04:57+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-18-1703-story-wagner": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18020737577959373",
     "link": "https://www.instagram.com/stories/rewerichter/4033225144089144214",
     "am": "2026-11-18T16:04:57+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-19T16:04:57+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-18-1704-story-rama": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17887935858626223",
     "link": "https://www.instagram.com/stories/rewerichter/4033225216231178629",
     "am": "2026-11-18T16:04:57+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-19T16:04:57+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-19-0700-story-we-intro": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18122595236061358",
     "link": "https://www.instagram.com/stories/rewerichter/4033664039816943359",
     "am": "2026-11-19T06:37:23+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-20T06:37:23+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-19-0701-story-we-filet": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17959117269081593",
     "link": "https://www.instagram.com/stories/rewerichter/4033664216162282170",
     "am": "2026-11-19T06:37:23+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-20T06:37:23+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-19-0702-story-we-gouda": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18027383840946597",
     "link": "https://www.instagram.com/stories/rewerichter/4033664408672403605",
     "am": "2026-11-19T06:37:23+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-20T06:37:23+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-19-0703-story-we-mettenden": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18038059172894093",
     "link": "https://www.instagram.com/stories/rewerichter/4033664582408871111",
     "am": "2026-11-19T06:37:23+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-20T06:37:23+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-19-0704-story-we-paderborner": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18120969887051627",
     "link": "https://www.instagram.com/stories/rewerichter/4033664775833390201",
     "am": "2026-11-19T06:37:23+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-20T06:37:23+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-19-0705-story-we-kartoffeln": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18081557612726866",
     "link": "https://www.instagram.com/stories/rewerichter/4033664957161595846",
     "am": "2026-11-19T06:37:23+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-20T06:37:23+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-19-0706-story-we-spitzkohl": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17941224366123277",
     "link": "https://www.instagram.com/stories/rewerichter/4033665116126256244",
     "am": "2026-11-19T06:37:23+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-20T06:37:23+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-19-1000-carousel-we-stars": {
-    "status": "veröffentlicht",
+    "status": "gelöscht",
     "typ": "carousel",
     "media_id": "18147775942580341",
     "link": "https://www.instagram.com/p/Df6zOFdDrpA/",
     "am": "2026-11-19T09:50:47+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "geloescht_am": "2026-11-21T22:06:44+01:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-19-1700-story-b-zitronen": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18183851362437595",
     "link": "https://www.instagram.com/stories/rewerichter/4033949822864564674",
     "am": "2026-11-19T16:05:12+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-20T16:05:12+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-19-1701-story-b-pepero": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17952132765349838",
     "link": "https://www.instagram.com/stories/rewerichter/4033949967274411199",
     "am": "2026-11-19T16:05:12+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-20T16:05:12+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-19-1702-story-b-droetker": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18112658360216855",
     "link": "https://www.instagram.com/stories/rewerichter/4033950111063591662",
     "am": "2026-11-19T16:05:12+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-20T16:05:12+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1000-carousel-vorrat": {
-    "status": "veröffentlicht",
+    "status": "gelöscht",
     "typ": "carousel",
     "media_id": "18662265835043170",
     "link": "https://www.instagram.com/p/Df9Xv7wF12K/",
     "am": "2026-11-20T09:47:06+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "geloescht_am": "2026-11-21T22:06:44+01:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1200-story-becks": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18417692461092110",
     "link": "https://www.instagram.com/stories/rewerichter/4034544126565810128",
     "am": "2026-11-20T11:45:58+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T11:45:58+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1201-story-b-50": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18104546378550533",
     "link": "https://www.instagram.com/stories/rewerichter/4034544301518598511",
     "am": "2026-11-20T11:45:58+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T11:45:58+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1202-story-b-adelholzener": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18133688467766731",
     "link": "https://www.instagram.com/stories/rewerichter/4034544451741766911",
     "am": "2026-11-20T11:45:58+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T11:45:58+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1203-story-b-granini": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17935075239422143",
     "link": "https://www.instagram.com/stories/rewerichter/4034544631803260844",
     "am": "2026-11-20T11:45:58+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T11:45:58+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1204-story-hohes-c": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17979533888938157",
     "link": "https://www.instagram.com/stories/rewerichter/4034544781917413745",
     "am": "2026-11-20T11:45:58+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T11:45:58+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1600-carousel-rezept-klassische-linsensuppe": {
     "status": "veröffentlicht",
@@ -615,108 +705,134 @@
     "am": "2026-11-20T15:53:03+00:00"
   },
   "2026-11-20-1700-story-we-filet": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18115224911578927",
     "link": "https://www.instagram.com/stories/rewerichter/4034695847668727562",
     "am": "2026-11-20T16:47:25+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T16:47:25+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1701-story-we-gouda": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18119393411009704",
     "link": "https://www.instagram.com/stories/rewerichter/4034696027587543649",
     "am": "2026-11-20T16:47:25+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T16:47:25+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1702-story-we-lamberti": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18181754503431423",
     "link": "https://www.instagram.com/stories/rewerichter/4034696179137078668",
     "am": "2026-11-20T16:47:25+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T16:47:25+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1703-story-we-paderborner": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18103854248527636",
     "link": "https://www.instagram.com/stories/rewerichter/4034696318866109522",
     "am": "2026-11-20T16:47:25+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T16:47:25+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1704-story-b-jackdaniels": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17880303711573002",
     "link": "https://www.instagram.com/stories/rewerichter/4034696389740580716",
     "am": "2026-11-20T16:47:25+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T16:47:25+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1800-story-img-vollmilch": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18121066346279348",
     "link": "https://www.instagram.com/stories/rewerichter/4034725699344538766",
     "am": "2026-11-20T17:46:43+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T17:46:43+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1801-story-img-nrw-vielfalt": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "17994860036856420",
     "link": "https://www.instagram.com/stories/rewerichter/4034725881369039999",
     "am": "2026-11-20T17:46:43+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T17:46:43+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1802-story-we-kartoffeln": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18047304758837232",
     "link": "https://www.instagram.com/stories/rewerichter/4034725980128047756",
     "am": "2026-11-20T17:46:43+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T17:46:43+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1803-story-we-spitzkohl": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18100589039537303",
     "link": "https://www.instagram.com/stories/rewerichter/4034726147975731766",
     "am": "2026-11-20T17:46:43+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T17:46:43+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1804-story-we-grandsud": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18119479595327689",
     "link": "https://www.instagram.com/stories/rewerichter/4034726322592940361",
     "am": "2026-11-20T17:46:43+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T17:46:43+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1805-story-b-moevenpick": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18043619666838802",
     "link": "https://www.instagram.com/stories/rewerichter/4034726404667098209",
     "am": "2026-11-20T17:46:43+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T17:46:43+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-20-1806-story-b-haribo": {
-    "status": "veröffentlicht",
+    "status": "abgelaufen",
     "typ": "story",
     "media_id": "18121012630792534",
     "link": "https://www.instagram.com/stories/rewerichter/4034726582505606142",
     "am": "2026-11-20T17:46:43+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "abgelaufen_am": "2026-11-21T17:46:43+00:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-21-1000-carousel-letzte-chance": {
-    "status": "veröffentlicht",
+    "status": "gelöscht",
     "typ": "carousel",
     "media_id": "18097836158171679",
     "link": "https://www.instagram.com/p/Df_41HkjJp2/",
     "am": "2026-11-21T09:15:47+00:00",
-    "angebot_bis": "2026-11-21"
+    "angebot_bis": "2026-11-21",
+    "geloescht_am": "2026-11-21T22:06:44+01:00",
+    "dateien_entfernt": "2026-11-21"
   },
   "2026-11-21-1100-reel-parkscheibe": {
     "status": "veröffentlicht",
