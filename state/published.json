@@ -854,5 +854,44 @@
     "media_id": "17960995824018326",
     "link": "https://www.instagram.com/stories/rewerichter/4035263091315248705",
     "am": "2026-11-21T11:34:26+00:00"
+  },
+  "2026-11-22-0800-carousel-vorschau-knaller": {
+    "status": "veröffentlicht",
+    "typ": "carousel",
+    "media_id": "18120671020797143",
+    "link": "https://www.instagram.com/p/DgCUSl2DagB/",
+    "am": "2026-11-22T07:53:01+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-22-0801-story-milka-weihnachtsmann": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17993704353073848",
+    "link": "https://www.instagram.com/stories/rewerichter/4035877623246451349",
+    "am": "2026-11-22T07:53:01+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-22-0802-story-hackfleisch": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18102881354430457",
+    "link": "https://www.instagram.com/stories/rewerichter/4035877782890055474",
+    "am": "2026-11-22T07:53:01+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-22-0803-story-b-cola-kasten": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18104704526455019",
+    "link": "https://www.instagram.com/stories/rewerichter/4035877941602490825",
+    "am": "2026-11-22T07:53:01+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-22-0804-story-prospekt-online": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18132229816870691",
+    "link": "https://www.instagram.com/stories/rewerichter/4035878107587901884",
+    "am": "2026-11-22T07:53:01+00:00"
   }
 }
