@@ -900,5 +900,29 @@
     "media_id": "18139892470641513",
     "link": "https://www.instagram.com/stories/rewerichter/4035947914673491851",
     "am": "2026-11-22T10:15:02+00:00"
+  },
+  "2026-11-23-0700-story-bananen": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18089954138687541",
+    "link": "https://www.instagram.com/stories/rewerichter/4036577150953679560",
+    "am": "2026-11-23T07:05:14+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-23-0701-story-kinder-bueno": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17999461146111057",
+    "link": "https://www.instagram.com/stories/rewerichter/4036577313424223305",
+    "am": "2026-11-23T07:05:14+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-23-0702-story-raclette": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17916266985481688",
+    "link": "https://www.instagram.com/stories/rewerichter/4036577460368150274",
+    "am": "2026-11-23T07:05:14+00:00",
+    "angebot_bis": "2026-11-28"
   }
 }
