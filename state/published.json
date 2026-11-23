@@ -932,5 +932,37 @@
     "link": "https://www.instagram.com/p/DgFHS4MlwvN/",
     "am": "2026-11-23T09:57:11+00:00",
     "angebot_bis": "2026-11-28"
+  },
+  "2026-11-23-1700-story-bonus-intro": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18119945675469157",
+    "link": "https://www.instagram.com/stories/rewerichter/4036859993509048429",
+    "am": "2026-11-23T16:27:11+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-23-1701-story-b-lindt": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18124534121063069",
+    "link": "https://www.instagram.com/stories/rewerichter/4036860069736285481",
+    "am": "2026-11-23T16:27:11+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-23-1702-story-b-muesli": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18651814345048852",
+    "link": "https://www.instagram.com/stories/rewerichter/4036860227014338001",
+    "am": "2026-11-23T16:27:11+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-23-1703-story-b-fireball": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18261755485308000",
+    "link": "https://www.instagram.com/stories/rewerichter/4036860395440800249",
+    "am": "2026-11-23T16:27:11+00:00",
+    "angebot_bis": "2026-11-28"
   }
 }
