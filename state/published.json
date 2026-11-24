@@ -1013,10 +1013,12 @@
     "angebot_bis": "2026-11-28"
   },
   "2026-11-24-1701-story-theke-leberwurst": {
-    "status": "fehler",
-    "versuche": 1,
-    "fehler": "HTTP 400 bei 17841477985512833/media_publish: OAuthException 9007/2207027: Media ID is not available",
-    "am": "2026-11-24T16:45:46+00:00"
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18125114104938021",
+    "link": "https://www.instagram.com/stories/rewerichter/4037622944997778354",
+    "am": "2026-11-24T17:43:02+00:00",
+    "angebot_bis": "2026-11-28"
   },
   "2026-11-24-1702-story-theke-kaese": {
     "status": "veröffentlicht",
