@@ -972,5 +972,29 @@
     "link": "https://www.instagram.com/p/DgHm3oBjVAV/",
     "am": "2026-11-24T09:12:52+00:00",
     "angebot_bis": "2026-11-28"
+  },
+  "2026-11-24-1200-story-hackfleisch": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18129533002913443",
+    "link": "https://www.instagram.com/stories/rewerichter/4037428945100620451",
+    "am": "2026-11-24T11:17:35+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-24-1201-story-haehnchen": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18112876250235566",
+    "link": "https://www.instagram.com/stories/rewerichter/4037429028281322522",
+    "am": "2026-11-24T11:17:35+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-24-1202-story-roastbeef": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18048814352674258",
+    "link": "https://www.instagram.com/stories/rewerichter/4037429107385795292",
+    "am": "2026-11-24T11:17:35+00:00",
+    "angebot_bis": "2026-11-28"
   }
 }
