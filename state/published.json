@@ -1003,5 +1003,27 @@
     "media_id": "18121946651325594",
     "link": "https://www.instagram.com/p/DgIToBZF4am/",
     "am": "2026-11-24T15:43:59+00:00"
+  },
+  "2026-11-24-1700-story-theke-wurst": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18143775091620196",
+    "link": "https://www.instagram.com/stories/rewerichter/4037594115357533125",
+    "am": "2026-11-24T16:45:46+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-24-1701-story-theke-leberwurst": {
+    "status": "fehler",
+    "versuche": 1,
+    "fehler": "HTTP 400 bei 17841477985512833/media_publish: OAuthException 9007/2207027: Media ID is not available",
+    "am": "2026-11-24T16:45:46+00:00"
+  },
+  "2026-11-24-1702-story-theke-kaese": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18445727443194638",
+    "link": "https://www.instagram.com/stories/rewerichter/4037594334568582873",
+    "am": "2026-11-24T16:45:46+00:00",
+    "angebot_bis": "2026-11-28"
   }
 }
