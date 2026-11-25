@@ -1073,5 +1073,45 @@
     "media_id": "18050960696827746",
     "link": "https://www.instagram.com/stories/rewerichter/4038197607359619819",
     "am": "2026-11-25T12:43:58+00:00"
+  },
+  "2026-11-25-1700-story-ristorante": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "17980860885148429",
+    "link": "https://www.instagram.com/stories/rewerichter/4038323345765772810",
+    "am": "2026-11-25T16:54:35+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-25-1701-story-la-mia": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18122415343999881",
+    "link": "https://www.instagram.com/stories/rewerichter/4038323426355174211",
+    "am": "2026-11-25T16:54:35+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-25-1702-story-b-erasco": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18353640688264539",
+    "link": "https://www.instagram.com/stories/rewerichter/4038323599747707757",
+    "am": "2026-11-25T16:54:35+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-25-1703-story-b-iglo": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18135759067667740",
+    "link": "https://www.instagram.com/stories/rewerichter/4038323682694239091",
+    "am": "2026-11-25T16:54:35+00:00",
+    "angebot_bis": "2026-11-28"
+  },
+  "2026-11-25-1704-story-b-fond": {
+    "status": "veröffentlicht",
+    "typ": "story",
+    "media_id": "18050909615822697",
+    "link": "https://www.instagram.com/stories/rewerichter/4038323855768966988",
+    "am": "2026-11-25T16:54:35+00:00",
+    "angebot_bis": "2026-11-28"
   }
 }
